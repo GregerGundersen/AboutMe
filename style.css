@@ -8,6 +8,10 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 /* Header styling */
 header {
   background-image: linear-gradient(
@@ -18,9 +22,9 @@ header {
     url(./media/CompressedHeader.jpg);
   background-size: cover;
   height: 100vh;
-  margin-bottom: 20px;
   position: relative;
   text-align: center;
+  scroll-snap-align: start;
 }
 
 header h1 {
@@ -37,20 +41,40 @@ header h3 {
 
 /* AboutMe section styling */
 main {
-  margin: 0 10vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(117, 19, 93, 0.73),
+      rgba(245, 246, 252, 0.52)
+    ),
+    url(./media/18-min.jpg);
+  background-size: cover;
+}
+
+main h1,
+main h2,
+main h3,
+main p,
+main .fas {
+  color: white;
 }
 
 .box {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  transition: 0.3s ease-in-out;
+  border-radius: 5%;
+}
+
+.box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .headerlogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  max-width: 70%;
+  /* align-items: center; */
+  /* max-width: 70%; */
 }
 
 .headerlogo .fas {
@@ -59,6 +83,11 @@ main {
 
 .privatliv {
   grid-area: about;
+  /* margin: auto; */
+}
+
+.framtid {
+  grid-area: future;
 }
 
 .studier {
@@ -71,7 +100,7 @@ main {
 
 .profilepic {
   grid-area: picture;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .profilepic img {
@@ -80,11 +109,11 @@ main {
 }
 
 .about {
+  margin: 0 50px;
   display: grid;
   grid-gap: 1rem;
   grid-template-areas:
-    "picture"
-    "about"
-    "studies"
-    "work";
+    "picture picture"
+    "about future"
+    "studies work";
 }
