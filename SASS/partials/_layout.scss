@@ -7,7 +7,7 @@ body {
 h1,
 h2,
 h3 {
-  //   font-family: variables.$headingfont;
+  font-family: variables.$headingfont;
 }
 
 p {
@@ -21,7 +21,7 @@ header {
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
-    url(./media/CompressedHeader.jpg);
+    url(../../media/CompressedHeader.jpg);
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -48,7 +48,7 @@ main {
       rgba(117, 19, 93, 0.73),
       rgba(245, 246, 252, 0.52)
     ),
-    url(./media/18-min.jpg);
+    url(../../media/18-min.jpg);
   background-size: cover;
 }
 

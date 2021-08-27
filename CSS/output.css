@@ -1,3 +1,108 @@
+body {
+  margin: 0;
+}
 
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header styling */
+header {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../../media/CompressedHeader.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  color: white;
+  top: 40vh;
+}
+
+header h3 {
+  color: white;
+}
+
+/* AboutMe section styling */
+main {
+  background-image: linear-gradient(to bottom, rgba(117, 19, 93, 0.73), rgba(245, 246, 252, 0.52)), url(../../media/18-min.jpg);
+  background-size: cover;
+}
+
+main h1,
+main h2,
+main h3,
+main p,
+main .fas {
+  color: white;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  transition: 0.3s ease-in-out;
+  border-radius: 5%;
+}
+
+.box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.headerlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* max-width: 70%; */
+}
+
+.headerlogo .fas {
+  font-size: 2rem;
+}
+
+.privatliv {
+  grid-area: about;
+  /* margin: auto; */
+}
+
+.framtid {
+  grid-area: future;
+}
+
+.studier {
+  grid-area: studies;
+}
+
+.jobb {
+  grid-area: work;
+}
+
+.profilepic {
+  grid-area: picture;
+  margin: 2rem auto;
+}
+
+.profilepic img {
+  max-height: 300px;
+  border-radius: 100%;
+}
+
+.about {
+  margin: 0 50px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "picture picture" "about future" "studies work";
+}
 
 /*# sourceMappingURL=output.css.map */
