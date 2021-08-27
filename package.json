@@ -1,0 +1,9 @@
+{
+  "name": "AboutMe",
+  "version": "1.0",
+  "description": "Website: Short description of me",
+  "main": "index.js",
+  "repository": "git@github.com:GregerGundersen/AboutMe.git",
+  "author": "Greger Gundersen",
+  "license": "MIT"
+}
