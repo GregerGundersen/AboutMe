@@ -1,0 +1,76 @@
+@use './variables';
+@use './mixins';
+
+.job {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: variables.$headingfont;
+}
+
+p,
+a {
+  font-family: variables.$pfont;
+}
+
+/* Header styling */
+.job_header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url(../../media/pexels-pixabay-247676.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  scroll-snap-align: start;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: absolute;
+    color: white;
+    top: 40vh;
+    right: 50vw;
+    // text-align: center;
+  }
+
+  a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.job_main {
+  margin: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(71, 19, 58, 0.425),
+      rgba(245, 246, 252, 0.02)
+    ),
+    url(../../media/16.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.job_article {
+  margin: 0px 400px;
+
+  p {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  :first-child {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+}

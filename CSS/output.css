@@ -1,4 +1,4 @@
-body {
+.index {
   margin: 0;
 }
 
@@ -8,12 +8,13 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Roboto", sans-serif;
 }
 
 /* Header styling */
-header {
+.index_header {
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../../media/CompressedHeader.jpg);
   background-size: cover;
   height: 100vh;
@@ -21,30 +22,37 @@ header {
   text-align: center;
   scroll-snap-align: start;
 }
-
-header h1 {
+.index_header h1 {
   font-size: 3rem;
   margin: 0;
   position: absolute;
   color: white;
   top: 40vh;
 }
-
-header h3 {
+.index_header h3 {
   color: white;
+}
+.index_header a {
+  padding: 1rem 2rem;
+  font-weight: 100;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 90vh;
+  right: 0vw;
 }
 
 /* AboutMe section styling */
-main {
+.index_main {
   background-image: linear-gradient(to bottom, rgba(117, 19, 93, 0.73), rgba(245, 246, 252, 0.52)), url(../../media/18-min.jpg);
   background-size: cover;
 }
-
-main h1,
-main h2,
-main h3,
-main p,
-main .fas {
+.index_main h1,
+.index_main h2,
+.index_main h3,
+.index_main p,
+.index_main .fas {
   color: white;
 }
 
@@ -66,7 +74,6 @@ main .fas {
   /* align-items: center; */
   /* max-width: 70%; */
 }
-
 .headerlogo .fas {
   font-size: 2rem;
 }
@@ -92,7 +99,6 @@ main .fas {
   grid-area: picture;
   margin: 2rem auto;
 }
-
 .profilepic img {
   max-height: 300px;
   border-radius: 100%;
@@ -103,6 +109,65 @@ main .fas {
   display: grid;
   grid-gap: 1rem;
   grid-template-areas: "picture picture" "about future" "studies work";
+}
+
+.job {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header styling */
+.job_header {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../../media/pexels-pixabay-247676.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  scroll-snap-align: start;
+}
+.job_header h1 {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  color: white;
+  top: 40vh;
+  right: 50vw;
+}
+.job_header a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+.job_main {
+  margin: 0;
+  background-image: linear-gradient(to bottom, rgba(71, 19, 58, 0.425), rgba(245, 246, 252, 0.02)), url(../../media/16.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.job_article {
+  margin: 0px 400px;
+}
+.job_article p {
+  color: white;
+  font-size: 1.1rem;
+}
+.job_article :first-child {
+  padding-top: 50px;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=output.css.map */
